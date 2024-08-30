@@ -1,0 +1,105 @@
+body {
+    font-family: "Gugi", sans-serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0f7fa; /* 하늘색 배경 */
+    margin: 0;
+}
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+/* 계산기 박스 스타일 */
+.calculator {
+    background-color: #b3e5fc; /* 하늘색 계산기 배경 */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 250px; 
+}
+/* 입력 결과 */
+#inputArea, #resultArea, #memoryArea {
+    width: 100%;
+    padding: 15px;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border: 1px solid #81d4fa; /* 하늘색 테두리 */
+    border-radius: 10px;
+    text-align: right;
+    box-sizing: border-box;
+    background-color: #ffffff; /* 흰색 배경 */
+    color: #333;
+}
+/* 전체 버튼 */
+.button, .number-button, .operator-button {
+    width: 70px;
+    height: 70px;
+    font-size: 22px;
+    margin: 5px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s; /* 호버 시 배경색 변경 */
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+/* 숫자 버튼 */
+.number-button {
+    background-color: #ffffff;
+    color: #0288d1; /* 하늘색 글자 */
+}
+.number-button:hover {
+    background-color: #b3e5fc; /* 하늘색 호버 */
+}
+/* 버튼 */
+.button, .operator-button {
+    background-color: #81d4fa; /* 하늘색 버튼 */
+    color: white;
+}
+.button:hover, .operator-button:hover {
+    background-color: #4fc3f7; /* 짙은 하늘색 호버 */
+}
+/* 버튼 크기 조정 */
+.operator-button {
+    width: 38px;
+    height: 38px;
+    font-size: 20px;
+}
+/* 버튼 일렬로 정렬 */
+.operator-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+/* 기록창 */
+.memory {
+    background-color: #b3e5fc; /* 하늘색 기록창 배경 */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+/* 기록 */
+.memory-list {
+    margin-bottom: 10px;
+}
+/* 기록 지우기 버튼 */
+.memory-button {
+    font-family: "Gugi", sans-serif;
+    width: 100%;
+    height: 45px;
+    font-size: 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #81d4fa; /* 하늘색 버튼 */
+    color: white;
+}
+.memory-button:hover {
+    background-color: #4fc3f7; /* 짙은 하늘색 호버 */
+}
